@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -21,14 +21,71 @@
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Avatador</a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li >
+                     <a href="#home" class="nav__link">Home</a>
+                  </li>
+                   <li >
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+                   <li >
+                     <a href="#models" class="nav__link">Models</a>
+                  </li>
+                   <li >
+                     <a href="#info" class="nav__link">Information</a>
+                  </li>
+                  <li >
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+               <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+            <!-- toggle button -->
+             <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+             </div>
+         </nav>
       </header>
 
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home grid section" id="home">
+               <img src="assets/img/home-bg.png" alt="" class="home__bg">
+               <div class="home__gradient"></div>
 
+               <div class="home__data">
+                  <h3 class="home__subtitle">CHOOSE YOUR AVENTADOR</h3>
+                  <h1 class="home__title">AVENTADOR</h1>
+               </div>
+
+               <div class="home__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-car-1.png" alt="imahes" class="home__img">
+                     </article>
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-car-2.png" alt="imahes" class="home__img">
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-car-3.png" alt="imahes" class="home__img">
+                     </article>
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-car-4.png" alt="imahes" class="home__img">
+                     </article>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+               <a href="#" class="home__button"><span>START</span>
+               <i class="ri-arrow-down-s-line"></i>
+               </a>
          </section>
 
          <!--==================== ABOUT ====================-->
@@ -64,7 +121,7 @@
       <script src=""></script>
 
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
